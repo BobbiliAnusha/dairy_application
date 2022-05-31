@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "anu@123",
+    "database": "dairy_application",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "anu@123",
+    "database": "dairy_application",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "anu@123",
+    "database": "dairy_application",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
