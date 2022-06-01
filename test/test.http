@@ -1,0 +1,48 @@
+
+GET http://localhost:3001/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDU1MDU5LCJleHAiOjE2NTQwNTYyNTl9.qfvXaOd8Wy_6sZeTlBTJLne1ExRHufcfuE72ZxdeZS8
+
+
+POST http://localhost:3001/users/signup
+Content-Type: application/json
+
+{
+    "name": "Anu",
+    "age": 22,
+    "mobile": 9887675643,
+    "email": "anu234@gmail.com",
+    "password": "Anu@123"
+}
+
+POST http://localhost:3001/users/login
+Content-Type: application/json
+
+{
+    "email": "anu234@gmail.com",
+    "password": "Anu@123"
+}
+
+GET http://localhost:3001/dairy
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudXJhZGhhMjM0QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiQW51cmFkaGFhIn0sImlhdCI6MTY1NDAwMTI2OCwiZXhwIjoxNjU0MDAyNDY4fQ.jUo_nd9Vf6aslpdTAkmZhRrjPhoNOJH44f5GMtDZAl8
+
+
+POST http://localhost:3001/dairy/2
+Content-Type: application/json
+
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDU1MDU5LCJleHAiOjE2NTQwNTYyNTl9.qfvXaOd8Wy_6sZeTlBTJLne1ExRHufcfuE72ZxdeZS8
+{   
+    "userid": 2,
+    "description": "I love this day",
+    "image":123
+}
+
+PUT http://localhost:3001/dairy/2
+Content-Type: application/json
+
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDU1MDU5LCJleHAiOjE2NTQwNTYyNTl9.qfvXaOd8Wy_6sZeTlBTJLne1ExRHufcfuE72ZxdeZS8
+{   
+    "userid": 2,
+    "description": "I love this day",
+    "image":123
+}
+
