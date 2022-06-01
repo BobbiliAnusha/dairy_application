@@ -1,0 +1,82 @@
+
+GET http://localhost:3001/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDYwMjc1LCJleHAiOjE2NTQwNjE0NzV9.MQw_3lnGjVfpIXEQInBIWK95Sgd9WJFjBOtpVQIWIGY
+
+
+POST http://localhost:3001/users/signup
+Content-Type: application/json
+
+{
+    "name": "siddu",
+    "age": 22,
+    "mobile": 9887675643,
+    "email": "siddu123@gmail.com",
+    "password": "siddu@123"
+}
+
+POST http://localhost:3001/users/login
+Content-Type: application/json
+
+{
+    "email": "anu234@gmail.com",
+    "password": "Anu@123"
+}
+
+GET http://localhost:3001/dairy
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDYyODg2LCJleHAiOjE2NTQwNjQwODZ9.kVxs6Ct4VpJUx1mzw_Va3KuU2cN_k4MRUd7hpho4ka0
+
+GET http://localhost:3001/dairy/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDYyODg2LCJleHAiOjE2NTQwNjQwODZ9.kVxs6Ct4VpJUx1mzw_Va3KuU2cN_k4MRUd7hpho4ka0
+
+POST http://localhost:3001/dairy/2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDcwMDQzLCJleHAiOjE2NTQwNzEyNDN9.CVfpVHPvj8QMKgAylzcwKaCKz4cX99E1DdtKaB6NDYI
+
+{   
+    "userid": 3,
+    "description": "I have a awesome memories today"
+}
+
+PUT  http://localhost:3001/dairy/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDYyODg2LCJleHAiOjE2NTQwNjQwODZ9.kVxs6Ct4VpJUx1mzw_Va3KuU2cN_k4MRUd7hpho4ka0
+
+
+{   
+    "userid": 1,
+    "description": "I love the day"
+}
+
+DELETE http://localhost:3001/dairy/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDYyODg2LCJleHAiOjE2NTQwNjQwODZ9.kVxs6Ct4VpJUx1mzw_Va3KuU2cN_k4MRUd7hpho4ka0
+
+
+GET http://localhost:3001/credentials
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDYyODg2LCJleHAiOjE2NTQwNjQwODZ9.kVxs6Ct4VpJUx1mzw_Va3KuU2cN_k4MRUd7hpho4ka0
+
+POST http://localhost:3001/credentials/2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDY5MDY5LCJleHAiOjE2NTQwNzAyNjl9.g2-Sj7KBMT8neAPcseBdgHD-gjSzTYmyTEWhs3SbOn8
+
+{   "userid":2,
+    "platform": "Ajio",
+    "email": "anusha234@gmail.com",
+    "password":"anusha123"
+}
+
+DELETE http://localhost:3001/credentials/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDY5MDY5LCJleHAiOjE2NTQwNzAyNjl9.g2-Sj7KBMT8neAPcseBdgHD-gjSzTYmyTEWhs3SbOn8
+
+
+PUT  http://localhost:3001/credentials/2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDY5MDY5LCJleHAiOjE2NTQwNzAyNjl9.g2-Sj7KBMT8neAPcseBdgHD-gjSzTYmyTEWhs3SbOn8
+
+{   
+    "platform": "byjuice",
+    "email": "anirudh234@gmail.com",
+    "password":"anirud"
+}
+
+GET http://localhost:3001/credentials/2
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDY5MDY5LCJleHAiOjE2NTQwNzAyNjl9.g2-Sj7KBMT8neAPcseBdgHD-gjSzTYmyTEWhs3SbOn8
