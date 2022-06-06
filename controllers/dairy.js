@@ -84,3 +84,20 @@ exports.deleteEntry = [
     },
 ];
 
+exports.entryBYDate= [
+    jwtauthentication,
+     async (req, res) => {
+         console.log("inside entrybydate");
+         const createdAt= req.params.date;
+         try {
+             const findEntry = await dairy.findOne({
+                 where: { createdAt },
+             });
+             
+             return res.send({ status: 200, entry_data: findEntry});
+         } catch (error) {
+             return res.send({ status: 500, data: error.message });
+         }
+     },
+ ];
+ 
