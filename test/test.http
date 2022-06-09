@@ -78,5 +78,8 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFp
     "password":"anirud"
 }
 
+
+GET http://localhost:3001/dairy/date/2022-06-01T07:54:28.218Z
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFrc2hpeWExMjNAZ21haWwuY29tIiwicGFzc3dvcmQiOiJha3NoaXlhQDEyMyJ9LCJpYXQiOjE2NTQxNjkwODcsImV4cCI6MTY1NDE3MDI4N30.wUGwpW4kjoCJ4dX-g0wKJPlvtxUVfayJxGx1pxvKoA0
 GET http://localhost:3001/credentials/2
 Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJlbWFpbCI6ImFudTIzNEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkFudUAxMjMifSwiaWF0IjoxNjU0MDY5MDY5LCJleHAiOjE2NTQwNzAyNjl9.g2-Sj7KBMT8neAPcseBdgHD-gjSzTYmyTEWhs3SbOn8
